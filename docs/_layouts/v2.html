@@ -3,7 +3,7 @@
 <head>
 	{% capture title %}{% if page.title %}{{ page.title }} - {% elsif post.title %}{{ post.title }} - {% endif %}{% endcapture %}
 
-	<title>{{ title }}Leaflet - a JavaScript library for interactive maps</title>
+	<title>{{ title }}Leaflet 中文网 - 一个轻量高效的 JavaScript 地图库</title>
 
 	<meta charset="utf-8" />
 
@@ -52,42 +52,42 @@
 <body{% if page.bodyclass %} class="{{ page.bodyclass }}"{% endif %}>
 
 <h1><a href="http://leafletjs.com"><img src="{{ root }}docs/images/logo.png" alt="Leaflet" width="300" /></a></h1>
-<h3 class="tagline">an open-source JavaScript library<br> for mobile-friendly interactive maps</h3>
+<h3 class="tagline">对移动端友好的<br>JavaScript 开源地图库</h3>
 
 <ul class="nav">
 	<li>
 		{% if page.title == nil %}
-			<span>Overview</span>
+			<span>概览</span>
 		{% else %}
-			<a href="{{ root }}index.html">Overview</a>
+			<a href="{{ root }}index.html">概览</a>
 		{% endif %}
 	</li>
 	<li>
 		{% if page.title == 'Tutorials' %}
-			<span>Tutorials</span>
+			<span>教程</span>
 		{% else %}
-			<a href="{{ root }}examples.html"{% if page.tutorial == true %} class="active"{% endif %}>Tutorials</a>
+			<a href="{{ root }}examples.html"{% if page.tutorial == true %} class="active"{% endif %}>教程</a>
 		{% endif %}
 	</li>
 	<li>
 		{% if page.title == 'Documentation' %}
-			<span>Docs</span>
+			<span>文档</span>
 		{% else %}
-			<a href="{{ root }}reference-{{ site.latest_leaflet_version }}.html">Docs</a>
+			<a href="{{ root }}reference-{{ site.latest_leaflet_version }}.html">文档</a>
 		{% endif %}
 	</li>
 	<li>
 		{% if page.title == 'Download' %}
-			<span>Download</span>
+			<span>下载</span>
 		{% else %}
-			<a href="{{ root }}download.html">Download</a>
+			<a href="{{ root }}download.html">下载</a>
 		{% endif %}
 	</li>
 	<li>
 		{% if page.title == 'Plugins' %}
-			<span>Plugins</span>
+			<span>插件</span>
 		{% else %}
-			<a href="{{ root }}plugins.html">Plugins</a>
+			<a href="{{ root }}plugins.html">插件</a>
 		{% endif %}
 	</li>
 	<li>
@@ -105,7 +105,7 @@
 {{ content }}
 
 <div class="footer">
-	<p>&copy; 2017 <a href="http://agafonkin.com/en">Vladimir Agafonkin</a>. Maps &copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors.</p>
+	<p>&copy; 2018 <a href="http://agafonkin.com/en">Vladimir Agafonkin</a>. Maps &copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors.</p>
 </div>
 
 </div>
