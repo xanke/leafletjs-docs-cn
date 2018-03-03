@@ -4035,7 +4035,7 @@ properties. The event might can optionally be propagated to event parents.</p>
 
 </section><section >
 
-<h4 id='tilelayer-url-template'>URL template</h4>
+<h4 id='tilelayer-url-template'>URL 模板</h4>
 
 
 
@@ -4050,22 +4050,22 @@ properties. The event might can optionally be propagated to event parents.</p>
 
 
 </section><section>
-<h3 id='tilelayer-factory'>Creation</h3>
+<h3 id='tilelayer-factory'>创建</h3>
 
 <section class='collapsable'>
 
-<h4 id='tilelayer-extension-methods'>Extension methods</h4>
+<h4 id='tilelayer-extension-methods'>拓展方法</h4>
 
 
 <table><thead>
 	<tr>
-		<th>Factory</th>
-		<th>Description</th>
+		<th>方法</th>
+		<th>描述</th>
 	</tr>
 	</thead><tbody>
 	<tr id='tilelayer-l-tilelayer'>
 		<td><code><b>L.tilelayer</b>(<nobr>&lt;String&gt;</nobr> <i>urlTemplate</i>, <nobr>&lt;<a href='#tilelayer-option'>TileLayer options</a>&gt;</nobr> <i>options?</i>)</nobr></code></td>
-		<td>Instantiates a tile layer object given a <code>URL template</code> and optionally an options object.</td>
+		<td>实例化一个 <code>URL 模版</code> 和选项对象。</td>
 	</tr>
 </tbody></table>
 
@@ -4073,7 +4073,7 @@ properties. The event might can optionally be propagated to event parents.</p>
 
 
 </section><section>
-<h3 id='tilelayer-option'>Options</h3>
+<h3 id='tilelayer-option'>选项</h3>
 
 <section >
 
@@ -4082,23 +4082,23 @@ properties. The event might can optionally be propagated to event parents.</p>
 
 <table><thead>
 	<tr>
-		<th>Option</th>
-		<th>Type</th>
-		<th>Default</th>
-		<th>Description</th>
+		<th>选项</th>
+		<th>类型</th>
+		<th>默认</th>
+		<th>描述</th>
 	</tr>
 	</thead><tbody>
 	<tr id='tilelayer-minzoom'>
 		<td><code><b>minZoom</b></code></td>
 		<td><code>Number</code>
 		<td><code>0</code></td>
-		<td>Minimum zoom number.</td>
+		<td>最小缩放级别</td>
 	</tr>
 	<tr id='tilelayer-maxzoom'>
 		<td><code><b>maxZoom</b></code></td>
 		<td><code>Number</code>
 		<td><code>18</code></td>
-		<td>Maximum zoom number.</td>
+		<td>最大缩放级别</td>
 	</tr>
 	<tr id='tilelayer-maxnativezoom'>
 		<td><code><b>maxNativeZoom</b></code></td>
@@ -4124,19 +4124,19 @@ from <code>maxNativeZoom</code> level and auto-scaled.</td>
 		<td><code><b>zoomOffset</b></code></td>
 		<td><code>Number</code>
 		<td><code>0</code></td>
-		<td>The zoom number used in tile URLs will be offset with this value.</td>
+		<td>缩放级别偏移</td>
 	</tr>
 	<tr id='tilelayer-tms'>
 		<td><code><b>tms</b></code></td>
 		<td><code>Boolean</code>
 		<td><code>false</code></td>
-		<td>If <code>true</code>, inverses Y axis numbering for tiles (turn this on for <a href="https://en.wikipedia.org/wiki/Tile_Map_Service">TMS</a> services).</td>
+		<td>设置为 True 将反转Y轴编号 (<a href="https://en.wikipedia.org/wiki/Tile_Map_Service">TMS</a> 服务需设置为 ture, 如百度地图)。</td>
 	</tr>
 	<tr id='tilelayer-zoomreverse'>
 		<td><code><b>zoomReverse</b></code></td>
 		<td><code>Boolean</code>
 		<td><code>false</code></td>
-		<td>If set to true, the zoom number used in tile URLs will be reversed (<code>maxZoom - zoom</code> instead of <code>zoom</code>)</td>
+		<td>设置为 True 将反转缩放等级 (<code>maxZoom - zoom</code>)</td>
 	</tr>
 	<tr id='tilelayer-detectretina'>
 		<td><code><b>detectRetina</b></code></td>

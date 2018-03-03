@@ -4,20 +4,17 @@ layout: v2
 
 <div class="announcement">Jan 18, 2018 — <a href="/2018/01/18/leaflet-1.3.1.html">Leaflet 1.3.1</a> 已发布</div>
 
-<p>Leaflet 是一个轻量高效对移动端友好的交互式 JavaScript 地图库.
-Weighing just about <abbr title="38 KB gzipped &mdash; that's 133 KB minified and 378 KB in the source form, with 10 KB of CSS (2 KB gzipped) and 11 KB of images.">仅 38 KB</abbr>,
-it&nbsp;has all the mapping <a href="#features">features</a> most developers ever need.</p>
+<p>Leaflet 是一个轻量高效对移动端友好的交互式 JavaScript 地图库，压缩后<abbr title="38 KB gzipped &mdash; that's 133 KB minified and 378 KB in the source form, with 10 KB of CSS (2 KB gzipped) and 11 KB of images.">38 KB</abbr>,
+it&nbsp;它具有多数地图开发所需要的<a href="#features">功能</a>。</p>
 
-<p>Leaflet is designed with <em>simplicity</em>, <em>performance</em> and <em>usability</em> in mind.
-It works efficiently across all major desktop and mobile platforms,
-can be extended with lots of <a href="plugins.html">plugins</a>,
-has a beautiful, easy to use and <a title="Leaflet API reference" href="reference.html">well-documented API</a>
-and a simple, readable&nbsp;<a title="Leaflet source code repository on GitHub" href="https://github.com/Leaflet/Leaflet">source code</a> that is a&nbsp;joy to
-<a title="A guide to contributing to Leaflet" href="https://github.com/Leaflet/Leaflet/blob/master/CONTRIBUTING.md">contribute</a> to.</p>
+<p>Leaflet 设计为<em>轻量</em>, <em>高效</em>和<em>可用性</em>。它支持所有主流的桌面和移动平台,并拥有众多 <a href="plugins.html">插件</a>，
+拥有简单丰富的 <a title="Leaflet API reference" href="reference.html">API</a>
+并完全<a title="Leaflet source code repository on GitHub" href="https://github.com/Leaflet/Leaflet">开源</a>，欢迎大家
+<a title="A guide to contributing to Leaflet" href="https://github.com/Leaflet/Leaflet/blob/master/CONTRIBUTING.md">贡献</a>。</p>
 
 <div id="map" class="map map-home" style="height: 300px; margin-top: 50px"></div>
 
-<p>Here we create a map in the <code>'map'</code> div, add <abbr title="Here we use OpenStreetMap tiles, but Leaflet doesn't force you to &mdash; use whatever works for you, it's open source!">tiles of our choice</abbr>, and then add a marker with some text in a popup:</p>
+<p>这里我们在 <code>'map'</code> div中传进一个地图，添加<abbr title="Here we use OpenStreetMap tiles, but Leaflet doesn't force you to &mdash; use whatever works for you, it's open source!">地图区域</abbr>，然后添加一些带有文本的标记：</p>
 
 <pre class="basic-code javascript"><code>var map = L.map('map').setView([51.505, -0.09], 13);
 
@@ -29,10 +26,9 @@ L.marker([51.5, -0.09]).addTo(map)
     .bindPopup('A pretty CSS3 popup.&lt;br&gt; Easily customizable.')
     .openPopup();</code></pre>
 
-<p>Learn more with the <a href="examples/quick-start/">quick start guide</a>, check out <a href="examples.html">other tutorials</a>,
-or head straight to the <a href="reference.html">API documentation</a>.
-If you have any questions, take a look at the <a href="https://github.com/Leaflet/Leaflet/blob/master/FAQ.md">FAQ</a> first.</p>
-
+<p>查看 <a href="examples/quick-start/">快速入门指南</a>, <a href="examples.html">查看示例</a>,
+或直接访问 <a href="reference.html">API 文档</a>.
+如果你有任何问题，请先查看 <a href="https://github.com/Leaflet/Leaflet/blob/master/FAQ.md">FAQ</a>。</p>
 
 </div>
 
@@ -79,7 +75,7 @@ If you have any questions, take a look at the <a href="https://github.com/Leafle
 
 
     <div class="no-break">
-        <h3>Interaction Features</h3>
+        <h3>定制功能</h3>
 
         <ul>
             <li>Drag panning with inertia</li>
@@ -94,7 +90,7 @@ If you have any questions, take a look at the <a href="https://github.com/Leafle
     </div>
 
     <div class="no-break">
-        <h3>Visual Features</h3>
+        <h3>交互特性</h3>
 
         <ul>
             <li>Zoom and pan animation</li>
@@ -106,7 +102,7 @@ If you have any questions, take a look at the <a href="https://github.com/Leafle
 
 
     <div class="no-break">
-        <h3>Customization Features</h3>
+        <h3>自定义特性</h3>
 
         <ul>
             <li>Pure CSS3 popups and controls <span class="quiet">for easy restyling</span></li>
@@ -118,7 +114,7 @@ If you have any questions, take a look at the <a href="https://github.com/Leafle
     </div>
 
     <div class="no-break">
-        <h3>Performance Features</h3>
+        <h3>性能特性</h3>
 
         <ul>
             <li>Hardware acceleration on mobile <span class="quiet"> makes it feel as smooth as native apps</span></li>
@@ -177,7 +173,7 @@ If you have any questions, take a look at the <a href="https://github.com/Leafle
     </div>
 </div>
 
-<p>If you find some feature really missing in Leaflet, first check if there's a <a href="plugins.html">plugin for it</a>. If not, please vote for the feature on the <a href="https://leaflet.uservoice.com">Leaflet UserVoice page</a>.</p>
+<p>如果 Leaflet 不满足你的需求，请先查看 <a href="plugins.html">插件</a>。如果还不能满足，请在 <a href="https://leaflet.uservoice.com">Leaflet UserVoice page</a>上提出。</p>
 
 <h2>Getting Involved</h2>
 
