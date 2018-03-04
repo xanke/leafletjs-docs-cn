@@ -886,7 +886,7 @@ handlers start running).</td>
 
 
 </section><section>
-<h3 id='map-method'>Methods</h3>
+<h3 id='map-method'>方法</h3>
 
 <section >
 
@@ -895,9 +895,9 @@ handlers start running).</td>
 
 <table><thead>
 	<tr>
-		<th>Method</th>
-		<th>Returns</th>
-		<th>Description</th>
+		<th>方法</th>
+		<th>返回</th>
+		<th>描述</th>
 	</tr>
 	</thead><tbody>
 	<tr id='map-getrenderer'>
@@ -912,45 +912,45 @@ are respected, and that the renderers do exist on the map.</p>
 
 </section><section class='collapsable'>
 
-<h4 id='map-methods-for-layers-and-controls'>Methods for Layers and Controls</h4>
+<h4 id='map-methods-for-layers-and-controls'>层和控件方法</h4>
 
 <div class='section-comments'></div>
 
 <table><thead>
 	<tr>
-		<th>Method</th>
-		<th>Returns</th>
-		<th>Description</th>
+		<th>方法</th>
+		<th>返回</th>
+		<th>描述</th>
 	</tr>
 	</thead><tbody>
 	<tr id='map-addcontrol'>
 		<td><code><b>addControl</b>(<nobr>&lt;<a href='#control'>Control</a>&gt;</nobr> <i>control</i>)</nobr></code></td>
 		<td><code>this</code></td>
-		<td><p>Adds the given control to the map</p>
+		<td><p>添加控件至地图视图</p>
 </td>
 	</tr>
 	<tr id='map-removecontrol'>
 		<td><code><b>removeControl</b>(<nobr>&lt;<a href='#control'>Control</a>&gt;</nobr> <i>control</i>)</nobr></code></td>
 		<td><code>this</code></td>
-		<td><p>Removes the given control from the map</p>
+		<td><p>移除控件</p>
 </td>
 	</tr>
 	<tr id='map-addlayer'>
 		<td><code><b>addLayer</b>(<nobr>&lt;<a href='#layer'>Layer</a>&gt;</nobr> <i>layer</i>)</nobr></code></td>
 		<td><code>this</code></td>
-		<td><p>Adds the given layer to the map</p>
+		<td><p>添加层至地图视图</p>
 </td>
 	</tr>
 	<tr id='map-removelayer'>
 		<td><code><b>removeLayer</b>(<nobr>&lt;<a href='#layer'>Layer</a>&gt;</nobr> <i>layer</i>)</nobr></code></td>
 		<td><code>this</code></td>
-		<td><p>Removes the given layer from the map.</p>
+		<td><p>移除层</p>
 </td>
 	</tr>
 	<tr id='map-haslayer'>
 		<td><code><b>hasLayer</b>(<nobr>&lt;<a href='#layer'>Layer</a>&gt;</nobr> <i>layer</i>)</nobr></code></td>
 		<td><code>Boolean</code></td>
-		<td><p>Returns <code>true</code> if the given layer is currently added to the map</p>
+		<td><p>查询是否有指定的层</p>
 </td>
 	</tr>
 	<tr id='map-eachlayer'>
@@ -1002,27 +1002,26 @@ are respected, and that the renderers do exist on the map.</p>
 
 </section><section class='collapsable'>
 
-<h4 id='map-methods-for-modifying-map-state'>Methods for modifying map state</h4>
+<h4 id='map-methods-for-modifying-map-state'>地图状态修改</h4>
 
 
 <table><thead>
 	<tr>
-		<th>Method</th>
-		<th>Returns</th>
-		<th>Description</th>
+		<th>方法</th>
+		<th>返回</th>
+		<th>描述</th>
 	</tr>
 	</thead><tbody>
 	<tr id='map-setview'>
 		<td><code><b>setView</b>(<nobr>&lt;<a href='#latlng'>LatLng</a>&gt;</nobr> <i>center</i>, <nobr>&lt;Number&gt;</nobr> <i>zoom</i>, <nobr>&lt;<a href='#zoom/pan-options'>Zoom/pan options</a>&gt;</nobr> <i>options?</i>)</nobr></code></td>
 		<td><code>this</code></td>
-		<td><p>Sets the view of the map (geographical center and zoom) with the given
-animation options.</p>
+		<td><p>设置地图位置（地理位置和缩放级别））</p>
 </td>
 	</tr>
 	<tr id='map-setzoom'>
 		<td><code><b>setZoom</b>(<nobr>&lt;Number&gt;</nobr> <i>zoom</i>, <nobr>&lt;<a href='#zoom/pan-options'>Zoom/pan options</a>&gt;</nobr> <i>options?</i>)</nobr></code></td>
 		<td><code>this</code></td>
-		<td><p>Sets the zoom of the map.</p>
+		<td><p>设置缩放级别</p>
 </td>
 	</tr>
 	<tr id='map-zoomin'>
@@ -1053,8 +1052,7 @@ stationary (e.g. used internally for scroll zoom and double-click zoom).</p>
 	<tr id='map-fitbounds'>
 		<td><code><b>fitBounds</b>(<nobr>&lt;<a href='#latlngbounds'>LatLngBounds</a>&gt;</nobr> <i>bounds</i>, <nobr>&lt;<a href='#fitbounds-options'>fitBounds options</a>&gt;</nobr> <i>options?</i>)</nobr></code></td>
 		<td><code>this</code></td>
-		<td><p>Sets a map view that contains the given geographical bounds with the
-maximum zoom level possible.</p>
+		<td><p>限定地图可移动区域</p>
 </td>
 	</tr>
 	<tr id='map-fitworld'>
@@ -1067,7 +1065,7 @@ zoom level possible.</p>
 	<tr id='map-panto'>
 		<td><code><b>panTo</b>(<nobr>&lt;<a href='#latlng'>LatLng</a>&gt;</nobr> <i>latlng</i>, <nobr>&lt;<a href='#pan-options'>Pan options</a>&gt;</nobr> <i>options?</i>)</nobr></code></td>
 		<td><code>this</code></td>
-		<td><p>Pans the map to a given center.</p>
+		<td><p>移动地图到新的中心点</p>
 </td>
 	</tr>
 	<tr id='map-panby'>
@@ -1079,14 +1077,13 @@ zoom level possible.</p>
 	<tr id='map-flyto'>
 		<td><code><b>flyTo</b>(<nobr>&lt;<a href='#latlng'>LatLng</a>&gt;</nobr> <i>latlng</i>, <nobr>&lt;Number&gt;</nobr> <i>zoom?</i>, <nobr>&lt;<a href='#zoom/pan-options'>Zoom/pan options</a>&gt;</nobr> <i>options?</i>)</nobr></code></td>
 		<td><code>this</code></td>
-		<td><p>Sets the view of the map (geographical center and zoom) performing a smooth
-pan-zoom animation.</p>
+		<td><p>移动至新的位置（中心和缩放）</p>
 </td>
 	</tr>
 	<tr id='map-flytobounds'>
 		<td><code><b>flyToBounds</b>(<nobr>&lt;<a href='#latlngbounds'>LatLngBounds</a>&gt;</nobr> <i>bounds</i>, <nobr>&lt;<a href='#fitbounds-options'>fitBounds options</a>&gt;</nobr> <i>options?</i>)</nobr></code></td>
 		<td><code>this</code></td>
-		<td><p>Sets the view of the map with a smooth animation like <a href="#map-flyto"><code>flyTo</code></a>,
+		<td><p>平滑移动值新的位置， <a href="#map-flyto"><code>flyTo</code></a>,
 but takes a bounds parameter like <a href="#map-fitbounds"><code>fitBounds</code></a>.</p>
 </td>
 	</tr>
@@ -1099,13 +1096,13 @@ but takes a bounds parameter like <a href="#map-fitbounds"><code>fitBounds</code
 	<tr id='map-setminzoom'>
 		<td><code><b>setMinZoom</b>(<nobr>&lt;Number&gt;</nobr> <i>zoom</i>)</nobr></code></td>
 		<td><code>this</code></td>
-		<td><p>Sets the lower limit for the available zoom levels (see the <a href="#map-minzoom">minZoom</a> option).</p>
+		<td><p>设置最小可用缩放级别 (参照 <a href="#map-minzoom">minZoom</a> 配置)</p>
 </td>
 	</tr>
 	<tr id='map-setmaxzoom'>
 		<td><code><b>setMaxZoom</b>(<nobr>&lt;Number&gt;</nobr> <i>zoom</i>)</nobr></code></td>
 		<td><code>this</code></td>
-		<td><p>Sets the upper limit for the available zoom levels (see the <a href="#map-maxzoom">maxZoom</a> option).</p>
+		<td><p>设置最大可用缩放级别 (参照 <a href="#map-maxzoom">maxZoom</a> 配置)</p>
 </td>
 	</tr>
 	<tr id='map-paninsidebounds'>
@@ -1136,21 +1133,21 @@ pan by default.</p>
 	<tr id='map-stop'>
 		<td><code><b>stop</b>()</nobr></code></td>
 		<td><code>this</code></td>
-		<td><p>Stops the currently running <code>panTo</code> or <code>flyTo</code> animation, if any.</p>
+		<td><p>停止当前运行的动画（<code>panTo</code> 和 <code>flyTo</code>）</p>
 </td>
 	</tr>
 </tbody></table>
 
 </section><section class='collapsable'>
 
-<h4 id='map-geolocation-methods'>Geolocation methods</h4>
+<h4 id='map-geolocation-methods'>地理定位方法</h4>
 
 
 <table><thead>
 	<tr>
-		<th>Method</th>
-		<th>Returns</th>
-		<th>Description</th>
+		<th>方法</th>
+		<th>返回</th>
+		<th>描述</th>
 	</tr>
 	</thead><tbody>
 	<tr id='map-locate'>
@@ -1177,14 +1174,14 @@ and aborts resetting the map view if map.locate was called with
 
 </section><section class='collapsable'>
 
-<h4 id='map-other-methods'>Other Methods</h4>
+<h4 id='map-other-methods'>其它方法</h4>
 
 
 <table><thead>
 	<tr>
-		<th>Method</th>
-		<th>Returns</th>
-		<th>Description</th>
+		<th>方法</th>
+		<th>返回</th>
+		<th>描述</th>
 	</tr>
 	</thead><tbody>
 	<tr id='map-addhandler'>
@@ -1196,7 +1193,7 @@ and aborts resetting the map view if map.locate was called with
 	<tr id='map-remove'>
 		<td><code><b>remove</b>()</nobr></code></td>
 		<td><code>this</code></td>
-		<td><p>Destroys the map and clears all related event listeners.</p>
+		<td><p>销毁地图并清楚所有相关的事件监听器。</p>
 </td>
 	</tr>
 	<tr id='map-createpane'>
@@ -1238,44 +1235,44 @@ if it&#39;s already initialized, optionally passing a function context.</p>
 
 </section><section class='collapsable'>
 
-<h4 id='map-methods-for-getting-map-state'>Methods for Getting Map State</h4>
+<h4 id='map-methods-for-getting-map-state'>获取地图状态方法</h4>
 
 
 <table><thead>
 	<tr>
-		<th>Method</th>
-		<th>Returns</th>
-		<th>Description</th>
+		<th>方法</th>
+		<th>返回</th>
+		<th>描述</th>
 	</tr>
 	</thead><tbody>
 	<tr id='map-getcenter'>
 		<td><code><b>getCenter</b>()</nobr></code></td>
 		<td><code><a href='#latlng'>LatLng</a></code></td>
-		<td><p>Returns the geographical center of the map view</p>
+		<td><p>获取当前中心点</p>
 </td>
 	</tr>
 	<tr id='map-getzoom'>
 		<td><code><b>getZoom</b>()</nobr></code></td>
 		<td><code>Number</code></td>
-		<td><p>Returns the current zoom level of the map view</p>
+		<td><p>获取当前缩放级别</p>
 </td>
 	</tr>
 	<tr id='map-getbounds'>
 		<td><code><b>getBounds</b>()</nobr></code></td>
 		<td><code><a href='#latlngbounds'>LatLngBounds</a></code></td>
-		<td><p>Returns the geographical bounds visible in the current map view</p>
+		<td><p>获取当前视图可见边界</p>
 </td>
 	</tr>
 	<tr id='map-getminzoom'>
 		<td><code><b>getMinZoom</b>()</nobr></code></td>
 		<td><code>Number</code></td>
-		<td><p>Returns the minimum zoom level of the map (if set in the <code>minZoom</code> option of the map or of any layers), or <code>0</code> by default.</p>
+		<td><p>获取当前最小缩放级别 (if set in the <code>minZoom</code> option of the map or of any layers), or <code>0</code> by default.</p>
 </td>
 	</tr>
 	<tr id='map-getmaxzoom'>
 		<td><code><b>getMaxZoom</b>()</nobr></code></td>
 		<td><code>Number</code></td>
-		<td><p>Returns the maximum zoom level of the map (if set in the <code>maxZoom</code> option of the map or of any layers).</p>
+		<td><p>获取当前最大缩放级别 (if set in the <code>maxZoom</code> option of the map or of any layers).</p>
 </td>
 	</tr>
 	<tr id='map-getboundszoom'>
@@ -1290,7 +1287,7 @@ the given bounds in its entirety.</p>
 	<tr id='map-getsize'>
 		<td><code><b>getSize</b>()</nobr></code></td>
 		<td><code><a href='#point'>Point</a></code></td>
-		<td><p>Returns the current size of the map container (in pixels).</p>
+		<td><p>获取当前容器大小（px 单位）</p>
 </td>
 	</tr>
 	<tr id='map-getpixelbounds'>
@@ -21592,27 +21589,22 @@ geographical CRSs. If <code>undefined</code>, the longitude axis does not wrap a
 <table><thead>
 	<tr>
 		<th>CRS</th>
-		<th>Description</th>
+		<th>描述</th>
 	</tr>
 	</thead><tbody>
 	<tr id='crs-l-crs-epsg3395'>
 		<td><code><b>L.CRS.EPSG3395</b></code></td>
-		<td>Rarely used by some commercial tile providers. Uses Elliptical Mercator projection.</td>
+		<td>使用椭圆墨卡托投影，较少被商用。</td>
 	</tr>
 	<tr id='crs-l-crs-epsg3857'>
 		<td><code><b>L.CRS.EPSG3857</b></code></td>
-		<td>The most common CRS for online maps, used by almost all free and commercial
-tile providers. Uses Spherical Mercator projection. Set in by default in
-Map&#39;s <a href="#crs"><code>crs</code></a> option.</td>
+		<td>使用球形墨卡托投影（<a href="#crs"><code>crs</code> 默认使用</a>），最广泛使用的CRS</td>
 	</tr>
 	<tr id='crs-l-crs-epsg4326'>
 		<td><code><b>L.CRS.EPSG4326</b></code></td>
-		<td>A common CRS among GIS enthusiasts. Uses simple Equirectangular projection.
-Leaflet 1.0.x complies with the <a href="https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification#global-geodetic">TMS coordinate scheme for EPSG:4326</a>,
-which is a breaking change from 0.7.x behaviour.  If you are using a <a href="#tilelayer"><code>TileLayer</code></a>
-with this CRS, ensure that there are two 256x256 pixel tiles covering the
-whole earth at zoom level zero, and that the tile coordinate origin is (-180,+90),
-or (-180,-90) for <code>TileLayer</code>s with <a href="#tilelayer-tms">the <code>tms</code> option</a> set.</td>
+		<td>常被 CIS 极客使用，使用轻巧的 Equirectangular 投影。
+Leaflet 1.0 使用符合 <a href="https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification#global-geodetic">TMS coordinate scheme for EPSG:4326</a>，如果你的 <a href="#tilelayer"><code>TileLayer</code></a>
+用于此CRS，请确保在缩放级别位0时覆盖整个地球上有两个256x256的瓦片, 并且瓦片坐标为 (-180,+90) 和 (-180,-90) 在 <code>TileLayer</code> 的 <a href="#tilelayer-tms"><code>tms</code> 配置</a></td>
 	</tr>
 	<tr id='crs-l-crs-earth'>
 		<td><code><b>L.CRS.Earth</b></code></td>
@@ -21655,7 +21647,7 @@ or explicit (using the <a href="#path-renderer"><a href="#renderer"><code>render
 Do not use this class directly, use <code>SVG</code> and <code>Canvas</code> instead.</p>
 
 <section>
-<h3 id='renderer-option'>Options</h3>
+<h3 id='renderer-option'>配置</h3>
 
 <section >
 
@@ -21664,10 +21656,10 @@ Do not use this class directly, use <code>SVG</code> and <code>Canvas</code> ins
 
 <table><thead>
 	<tr>
-		<th>Option</th>
-		<th>Type</th>
-		<th>Default</th>
-		<th>Description</th>
+		<th>配置</th>
+		<th>类型</th>
+		<th>默认</th>
+		<th>描述</th>
 	</tr>
 	</thead><tbody>
 	<tr id='renderer-padding'>
